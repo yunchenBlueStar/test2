@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ch08-12</title>
+    <style>
+    img {
+        width:0px;         /* 圖片大小預設為 0 */
+        position:absolute;
+        left:210px;
+        transition: 0.5s;  /* 轉移時間 0.5 秒 */
+        }
+    h2  {margin:5px; color:navy}
+    li  {width:180px;}
+    a   {transition: 2s,            /* 第1組:轉移時間 2 秒   */
+                     4s             /* 第2組:轉移時間 4 秒   */
+                     color          /*       轉移 color 屬性 */
+                     2s;}           /*       延後 2 秒才開始 */
+    a:hover {
+            background:blue;        /* 第1組轉移效果 */
+            color:white;            /* 第2組轉移效果 */
+            }   
+    a:hover + img {width:180px;} 
+    /* 滑鼠所指的 a 元素之後的 img 元素, (圖片) 寬度設為 180px */
+    </style>
+    <base href="http://www.flag.com.tw">
+</head>
+<body>
+  <h2>新書通報</h2>
+  <ul>
+    <li>
+      <a href="/book/5105.asp?bokno=F5910">積木閱讀法 奇蹟 3 步驟 翻轉英文閱讀力!</a>
+      <img src="/images/cover/middle/F5910.gif">
+    </li>
+    <li>
+      <a href="/book/5105.asp?bokno=F5166">完全詳解! 免費雲端工具活用事典</a>
+      <img src="/images/cover/middle/F5166.gif">
+    </li>
+    <li>
+      <a href="/book/5105.asp?bokno=F5524">設計職人必備 Photoshop 精緻筆刷素材集</a>
+      <img src="/images/cover/middle/F5524.gif">
+    </li>
+    <li>
+      <a href="/book/5105.asp?bokno=F5171">網路規劃與管理實務- 協助考取 CCNA 證照</a>
+      <img src="/images/cover/middle/F5171.gif">
+    </li>
+  </ul>
+</body>
+</html>

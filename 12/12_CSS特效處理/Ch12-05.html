@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ch08-14</title>
+    <style>
+        ol {border: 2px dotted orange; }
+        /* 利用右框線表示投票數 */
+        li { 
+            margin: 3px; 
+            width:  8em;
+            border-right-style: solid;
+            border-right-color: red;
+        }
+        /* 建立 3 個 keyframes, 分別設定不同的框線寬度 */
+        @keyframes bar1 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 150px
+            }
+        }
+        @keyframes bar2 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 100px
+            }
+        }
+        @keyframes bar3 {
+            from {
+                border-right-width: 0px
+            }
+            to {
+                border-right-width: 50px
+            }
+        }
+        
+        /* 
+           用 id 選擇器建立所要的動畫效果 
+           各動畫時間長度不同, 都只會執行 1 次
+        */
+        #htm {
+            animation: bar1 2s ease;
+            border-right-width: 150px
+        }
+        
+        #css {
+            animation: bar2 1.5s ease-out;
+            border-right-width: 100px
+        }
+        
+        #js {
+            animation: bar3 1s ease-in;
+            border-right-width: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <h3>最受歡迎網頁程式語言</h3>
+    <ol>
+        <li id="htm">HTML:150票</li>
+        <li id="css">CSS:100票</li>
+        <li id="js">JavaScript:50票</li>
+    </ol>
+</body>
+</html>

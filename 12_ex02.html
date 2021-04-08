@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ch11_2</title>
+	<style>
+		img {
+			width: 30%;
+		}
+
+		h1:hover {
+			color: blue;
+			font-style: italic;
+			background-color: pink;
+		}
+
+		div:hover {
+			background-color: #FFFFBB;
+			color: red;
+		}
+
+		img {
+			transition: 2s ease;
+		}
+
+		div:hover img {
+			width: 60%;
+			transition: 2s ease;
+			transform: scale(1, 1);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>請將滑鼠移到照片上：</h1>
+	<div>photo 1 <img src="photos/01.jpg"> </div>
+	<div>photo 2 <img src="photos/02.jpg"> </div>
+	<div>photo 3 <img src="photos/03.jpg"> </div>
+
+</body>
+
+</html>
